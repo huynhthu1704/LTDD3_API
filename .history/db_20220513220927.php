@@ -2,7 +2,7 @@
 //tạo class quản lí database
 class Db
 {
-    //Properties
+    //khai báo trường dữ liệu
     public static $connection;
     //Constructer
     public function __construct()

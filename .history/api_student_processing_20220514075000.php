@@ -1,7 +1,7 @@
 <?php
 require("config.php");
 require("db.php");
-require("Student.php");
+require("SinhVien.php");
 $sv = new Student();
 $method = $_SERVER['REQUEST_METHOD'];
 //Use to get data from request method that is not get, post
@@ -18,6 +18,8 @@ function parseInput()
 }
 switch ($method) {
     case 'POST':
+        echo 'You are using ' . $method . ' Method' . "\n";
+        //Get data from post request method
         $id = isset($_POST['id']) ? $_POST['id'] : "";
         $student_name = isset($_POST['student_name']) ? $_POST['student_name'] : "";
         $username = isset($_POST['username']) ? $_POST['username'] : "";
@@ -32,6 +34,8 @@ switch ($method) {
         }
         break;
     case 'PUT':
+        //Here Handle PUT Request
+        echo 'You are using ' . $method . ' Method' . "\n";
         //Get data from put request method
         $_PUT = parseInput();
         $id = isset($_PUT['id']) ? $_PUT['id'] : "";
@@ -48,6 +52,8 @@ switch ($method) {
         break;
 
     case 'DELETE':
+        //Here Handle PUT Request
+        echo 'You are using ' . $method . ' Method' . "\n";
         //Get data from put request method
         $_DELETE = parseInput();
         $id = isset($_DELETE['id']) ? $_DELETE['id'] : "";
@@ -57,7 +63,5 @@ switch ($method) {
         } else {
             echo "Fail";
         }
-        break;
-    default:
         break;
 }

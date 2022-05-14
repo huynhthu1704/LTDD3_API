@@ -1,7 +1,7 @@
 <?php
 require("config.php");
 require("db.php");
-require("Student.php");
+require("SinhVien.php");
 $sv = new Student();
 $method = $_SERVER['REQUEST_METHOD'];
 //Use to get data from request method that is not get, post
