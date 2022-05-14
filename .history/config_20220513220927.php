@@ -3,7 +3,7 @@ define( 'DB_NAME', 'student_management');
 /** MySQL database username */
 define( 'DB_USER', 'root');
 /** MySQL database password */
-define( 'DB_PASSWORD', '@ThanhThuAnh12345');
+define( 'DB_PASSWORD', '');
 /** MySQL hostname */
 define( 'DB_HOST', 'localhost');
 /** port number of DB */

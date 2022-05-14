@@ -4,7 +4,6 @@ require("db.php");
 require("Student.php");
 $sv = new Student();
 $method = $_SERVER['REQUEST_METHOD'];
-echo $method;
 //Use to get data from request method that is not get, post
 function parseInput()
 {
