@@ -1,7 +1,7 @@
 <?php
-define( 'DB_NAME', 'id18932286_student_management');
+define( 'DB_NAME', 'student_management');
 /** MySQL database username */
-define( 'DB_USER', 'id18932286_qlsv2022');
+define( 'DB_USER', 'root');
 /** MySQL database password */
 define( 'DB_PASSWORD', '@ThanhThuAnh12345');
 /** MySQL hostname */

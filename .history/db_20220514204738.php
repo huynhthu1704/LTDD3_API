@@ -1,10 +1,10 @@
 <?php
-//tạo class quản lí database
+//Create class to manage Database
 class Db
 {
     //Properties
     public static $connection;
-    //Constructer
+    //Constructor
     public function __construct()
     {
         if (!self::$connection) {
